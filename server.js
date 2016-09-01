@@ -11,7 +11,7 @@ app.get('/about',middleware.requireAuthentication,function(req, res){
 	res.send('I am an application architect');
 });
 
-app.use(express.static(__dirname + '/Public'));
+app.use(express.static(__dirname + '/public'));
 
 app.listen(port, function(){
 	console.log('Express server started on port ' + port);
